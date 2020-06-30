@@ -1,6 +1,8 @@
 :root {
     --main-fonts-color: #000000;
 
+    --regular-font-size: 33px;
+
     --main-bg-color: #ffffff;
     --transparent-bg: #ffffff00;
 }
@@ -40,7 +42,7 @@ body {
     color: var(--main-fonts-color);
     font-family: oldStandard;
     font-weight: 400;
-    font-size: 44px;
+    font-size: var(--regular-font-size);
     line-height: 0;
     margin: 33px 10px;
     width: 150px;
@@ -59,7 +61,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin: 0px 14px 15px 14px;
-    font-size: 44px;
+    font-size: var(--regular-font-size);
     padding-top: 140px;
     box-sizing: margin-box;
 }
@@ -92,7 +94,7 @@ body {
     border-left-style: solid;
     border-left-color: var(--main-fonts-color);
     border-left-width: 1px;
-    font-size: 44px;
+    font-size: var(--regular-font-size);
     float: right;
     padding-left: 20px;
 }
@@ -124,11 +126,12 @@ body {
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 20px;
     font-family: oldStandard;
 }
 
 .ministerstwo-photo {
     display: block;
     margin: 0 auto;
+    width: 100px;
 }
