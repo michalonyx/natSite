@@ -2,8 +2,203 @@
 <html>
     <head>
         <title></title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>empty template</div>
+        <nav class="natSite-menu">
+            <div class="natSite-menu-button">
+                Natalia
+            </div>
+            <div class="natSite-menu-button">
+                Wiernik
+            </div>
+            <div class="natSite-menu-button menu-button--about"
+                onclick='showAbout()'>
+                About
+            </div>
+            <div class="natSite-menu-button menu-button--close"
+                onclick='showAll()'>
+                Close
+            </div>
+        </nav>
+
+        <div>
+            <div class='ministerstwo'>
+                <p>Zrealizowano w ramach programu stypendialnego Ministra Kultury i Dziedzictwa Narodowego – Kultura w sieci</p>
+                <img src="photos/ministerstwo.jpg" class='ministerstwo-photo' />
+            </div>
+        </div>
+
+        <main class='natSite-body'>
+            <img src="photos/02_wota.png" class='wota' />
+            <img src="photos/01_refugees@2x.png" class='refugees' />
+            <img src="photos/01_nonplaces.png" class='nonplaces' />
+            <img src="photos/01_collections.png" class='collections' />
+        </main>
+
+        <section class='natSite-about'>
+            <div class='placeholder'></div>
+            <div class='natSite-about-insideMenu'>
+                <a class='natSite-about-insideMenu-option' href="#bio">Bio</a>
+                <a class='natSite-about-insideMenu-option'  href="#exhibitions">Exhibitions</a>
+                <a class='natSite-about-insideMenu-option'  href="#awards">Awards</a>
+                <a class='natSite-about-insideMenu-option'  href="#scholarships">Scholarships</a>
+                <a class='natSite-about-insideMenu-option'  href="#publications">Publications</a>
+
+                <p class='natSite-about-insideMenu-email'>natalia.wiernik@gmail.com</p>
+            </div>
+            <div class='natSite-about-info'>
+                <p id='bio'>
+                    (b.1989) is a multimedia artist living and working in Krakow, Poland. She was a student at the Faculty of Graphic Arts at the Jan Matejko Academy of Fine Arts in Krakow (ASP) between 2008 — 2013. Wiernik pursued her doctoral studies at the Department of Animation, Photography and Digital Media at ASP and in 2017 she was awarded a PhD in Fine Arts. She also works at ASP as a lecturer. In her artistic practice, she analyzed issues related to the broadly defined concept of identity, its formation in the process of remembering, site- specific activities, and in the perspective of interpersonal relations at the level of family and society, e.g. in cultivated traditions. In this context, the institution of museum, its role in creating collections and its potential to shape social consciousness has become an area of interest for her. In 2017, Natalia and photographer Omar Marques prepared an exhibition entitled refugees, in which they focused on the topic of migration and the plight of refugees' in contemporary Europe. They are currently working on a book, where together with specialists in various fields they focus on the problem of exclusion in the context of the migration crisis, undertaking a critical analysis of press photography dealing with this area and its impact on public awareness.
+                </p>
+                <p id='exhibitions'>
+                    <span class='about-info--italic'>Selected exhibitions</span>
+                    <p class='about-info---header'>2018</p>
+                    <span class='about-info--italic'>The Situation Has Changed. 20th and 21st- Century Polish Art,</span> group exhibition, National Museum in Krakow
+                    <p class='about-info---header'>2018</p>
+                    <span class='about-info--italic'>Artsite Residenze,</span>  Reali Phanes, group exhibition, Tourin, Italy
+                    <p class='about-info---header'>2018</p>
+                    <span class='about-info--italic'>Humble Cats,</span> Photoville, group exhibition, Brooklyn, New York
+                    <p class='about-info---header'>2018</p> 
+                    <span class='about-info--italic'>In control,</span> group exhibition, Anya Tish Gallery, Houston, Texas 
+                    <p class='about-info---header'>2017</p> 
+                    <span class='about-info--italic'>#Heritage,</span>
+                    National Museum in Krakow, group exhibition, Natalia Wiernik Wota, Poland 
+                    <p class='about-info---header'>2017</p> 
+                    <span class='about-info--italic'>Common field,</span> group exhibition, Forum Przestrzenie, Krakow, Poland 
+                    <p class='about-info---header'>2017</p> 
+                    <span class='about-info--italic'>Refugees. Images of the unseen,</span> cooperation with Omar Marques, Tytano, Dolnych Młynów 10, Krakow, Poland 
+                    <p class='about-info---header'>2017</p> 
+                    <span class='about-info--italic'>La Quatrieme image,</span> Photography Festival, Paris, France 
+                    <p class='about-info---header'>2017</p> 
+                    <span class='about-info--italic'>Cracow in the box,</span> Historical Museum Of The City of Cracow, Cracow, Poland 
+                    <p class='about-info---header'>2016</p> 
+                    Solo show: <span class='about-info--italic'>Salty bread,</span> The Cracow Salt Works Museum at Wieliczka, Poland 
+                    <p class='about-info---header'>2016</p> 
+                    <span class='about-info--italic'>Anomalies/Cognition-recogintion,</span> Gallery ASP Cracow, Poland 
+                    <p class='about-info---header'>2016</p> 
+                    Manifesta 11, Performance <span class='about-info--italic'>What people do for money</span>
+                    with Eleonora Stassi in Cabaret Voltaire, Zürich, Switzerland 
+                    <p class='about-info---header'>2016</p> 
+                    Solo show: <span class='about-info--italic'>Owned,</span> Migarations Museum, Zürich, Switzerland 
+                    <p class='about-info---header'>2016</p> 
+                    <span class='about-info--italic'>Nuits de projections,</span> Voies off Photography Festival, Arles, France 
+                    <p class='about-info---header'>2016</p> 
+                    Solo show: <span class='about-info--italic'>Wellfare,</span> Biennale, International FOTO FEST Houston (Texas), USA 
+                    <p class='about-info---header'>2016</p> 
+                    Solo show: <span class='about-info--italic'>Display,</span> Gallery Academy of Fine Arts in Cracow, Poland 
+                    <p class='about-info---header'>2015</p>
+                    <span class='about-info--italic'>Less,</span> Museum of History of Photography, Cracow 
+                    <p class='about-info---header'>2015</p> 
+                    <span class='about-info--italic'>Nord Art Festival,</span> Büdelsdorf, Germany 
+                    <p class='about-info---header'>2015</p> 
+                    <span class='about-info--italic'>FAMILYDOM,</span> fsm Gallery, Florence, Italy 
+                    <p class='about-info---header'>2015</p> 
+                    <span class='about-info--italic'>Break,</span> Garden of Arts in Lesser Poland, Cracow 
+                    <p class='about-info---header'>2015</p> 
+                    Solo show: <span class='about-info--italic'>Thanksgiving,</span> Pusta Gallery, Katowice, Poland 
+                    <p class='about-info---header'>2014</p> 
+                    Powerhouse Arena, Brooklyn, New York, USA 
+                    <p class='about-info---header'>2014</p> 
+                    New York Photography Festival, New York, USA 
+                    <p class='about-info---header'>2013</p> 
+                    <span class='about-info--italic'>The Protagonists,</span> General German Consulate in Cracow 
+                    <p class='about-info---header'>2013</p> 
+                    Solo show: <span class='about-info--italic'>Thanksgiving,</span> Pauza Gallery, Cracow, Poland 
+                    <p class='about-info---header'>2013</p> 
+                    International Festival Art&Fashion in Poznań, Poland 
+                    <p class='about-info---header'>2013</p> 
+                    Palace of Art in Cracow, Poland 
+                    <p class='about-info---header'>2013</p> 
+                    Somerset House, London, UK 
+                    <p class='about-info---header'>2012</p> 
+                    <span class='about-info--italic'>Place,</span> General German Consulate, Poland 
+                    <p class='about-info---header'>2011</p> 
+                    <span class='about-info--italic'>Sein und Schein,</span> Münich, Germany
+                </p>
+                <p id='awards'>
+                    <span class='about-info--italic'>Awards and achievements</span>
+                    <p class='about-info---header'>2016</p>
+                    Laureate — Sejsmograf Bunkier Sztuki Gallery of Contemporary Art, Cracow, Poland 
+                    <p class='about-info---header'>2016</p>
+                    Finalist — Voies-off, Photography Festival in Arles, France 
+                    <p class='about-info---header'>2015 </p>
+                    Finalist — Photography Festival in Braga ENCONTROS DA IMAGEM 
+                    <p class='about-info---header'>2015 </p>
+                    Shotlisted — Villa Noailles, France, International Festival of Fashion and Photography in Hyeres 
+                    <p class='about-info---header'>2015</p>
+                    Winner — Celest Prize, Visible White, Florence 
+                    <p class='about-info---header'>2014 </p>
+                    Winner — PDN Photo Annual, New York 
+                    <p class='about-info---header'>2014 </p>
+                    Honourable Mention — International Photography Awards (IPA), Los Angeles 
+                    <p class='about-info---header'>2013</p> 
+                    Winner — One Eyeland Awards, Silver Medal for the series The Protagonists 
+                    <p class='about-info---header'>2013 </p>
+                    Finalist — New York Photography Awards 
+                    <p class='about-info---header'>2013 </p>
+                    Winner — Sony World Photography Awards, Student Focus, London 
+                    <p class='about-info---header'>2013 </p>
+                    Finalist — Sony World Photography Awards Open Competition – People Category 
+                    <p class='about-info---header'>2013 </p>
+                    Semifinalist — Adobe Design Achievments Awards 
+                    <p class='about-info---header'>2012 </p>
+                    Laureate — International Photography Confrontation, Just One Photo, prize from the Foundation Photography for the future, Poland 
+                    <p class='about-info---header'>2012 </p>
+                    Semifinalist — international contest Adobe Design Achievments Awards 
+                    <p class='about-info---header'>2011 </p>
+                    Chosen to represent the country at an international contest in Munich, Münchner Künstlerhaus Goldener Kentaur Sein und Schein
+                </p>
+                <p id='scholarships'>
+                    <span class='about-info--italic'>Scholarships</span>
+                    <p class='about-info---header'>2015 </p>
+                    Grant holder from Rector of Academy of Fine Arts in Cracow for prominent achievments 
+                    <p class='about-info---header'>2015 </p>
+                    Grant holder from the Ministry of Higher Education, Poland 
+                    <p class='about-info---header'>2014 </p>
+                    Grant holder from Rector of Academy of Fine Arts in Cracow for prominent achievments 
+                    <p class='about-info---header'>2014 </p>
+                    Grant holder from the National Culture Center and Ministry of Culture and National Heritage (Young Poland), Poland 
+                    <p class='about-info---header'>2014 </p>
+                    Creative Scholarship of the Head of the City of Cracow 
+                    <p class='about-info---header'>2013 </p>
+                    Grant holder from Rector of Academy of Fine Arts in Cracow for prominent achievments 
+                    <p class='about-info---header'>2013 </p>
+                    Grant holder from the Ministry of Higher Education, Poland
+                </p>
+                <p id='publications'>
+                    <span class='about-info--italic'>Selected publications</span>
+                    <p class='about-info---header'>British Journal of Photography </p>
+                    <span class='about-info--italic'>http://www.bjp-online.com/2016/08/ understanding-the-value-of-places-with-natalia- wiernik/</span>
+                    <p class='about-info---header'>NEOmag</p> 
+                    <span class='about-info--italic'>http://neomag.it/?portfolio=un-talento- emergente-in-cerca-didentita-natalia-wiernik </span>
+                    <p class='about-info---header'>FIGARO</p>
+                    special photo-session dedicated 
+                    <p class='about-info---header'>L'OBS </p>
+                    portfolio presented in edition 2652 du 3 au 9, 09/2015 
+                    <p class='about-info---header'>The Guardian </p>
+                    publication of <span class='about-info--italic'>The Protagonists</span>
+                    <p class='about-info---header'>BBC </p>
+                    publication on the website 
+                    <p class='about-info---header'>PHOTOGRAPHIE Germany </p>
+                    interview, 10/2015 
+                    <p class='about-info---header'>SLATE MAG </p>
+                    New York, interview David Rosenberg 
+                    <p class='about-info---header'>BOOK DEBUTS 2014 </p>
+                    <p class='about-info---header'>HUMBLE ARTS FOUNDATION </p>
+                    <span class='about-info--italic'>New Cats in Art Photography,</span> group show nr 41, 
+                    <p class='about-info---header'>FEATURE SHOOT </p>
+                    New York 2014, article Jenna Garrota 
+                    <p class='about-info---header'>FOTOHITS </p>
+                    Gemany 2013, interview Dirk Hartmann 
+                    <p class='about-info---header'>Taxidesign </p>
+                    New York 2014, article Jillian Wong <br/>
+                    <br/>
+                    (And many others)
+                </p>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
     </body>
 </html>
