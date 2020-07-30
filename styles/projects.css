@@ -1,0 +1,59 @@
+:root {
+    --main-fonts-color: #000000;
+
+    --regular-font-size: 33px;
+
+    --main-bg-color: #ffffff;
+    --transparent-bg: #ffffff00;
+
+    --transition: 1s;
+}
+
+@font-face {
+    font-family: oldStandard;
+    src: url(../fonts/OldStandardTT-Regular.ttf);
+}
+
+@font-face {
+    font-family: oldStandardItalic;
+    src: url(../fonts/OldStandardTT-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: oldStandardBold;
+    src: url(../fonts/OldStandardTT-Bold.ttf);
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.natSite-menu-button,
+.footer-menu-button {
+    color: var(--main-fonts-color);
+    text-decoration: none;
+    font-family: oldStandard;
+    font-weight: 400;
+    font-size: var(--regular-font-size);
+    line-height: 0;
+    margin: 33px 10px;
+    margin-bottom: 14px;
+}
+
+.natSite-menu,
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.footer-menu {
+    bottom: 20px;
+}

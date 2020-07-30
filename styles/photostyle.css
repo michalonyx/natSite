@@ -1,0 +1,160 @@
+.wota,
+.non-places,
+.refugees,
+.re-collection,
+.saltyBread,
+.display,
+.theProtagonists,
+.thingsInCommon,
+.thanksgiving {
+    position: absolute;
+    opacity: 0.2;
+    filter: blur(30px);
+    transition: 0.2s;
+}
+
+.wota:hover,
+.non-places:hover,
+.refugees:hover,
+.re-collection:hover,
+.saltyBread:hover,
+.display:hover,
+.theProtagonists:hover,
+.thingsInCommon:hover,
+.thanksgiving:hover {
+    opacity: 1;
+    filter: none;
+    z-index: 101;
+}
+
+.wota {
+    top: 83px;
+    left: 9%;
+}
+
+.wota-img {
+    width: 460px;
+}
+
+.wota-label {
+    display: inline-block;
+    transform: rotate(90deg);
+    padding-top: 70px;
+}
+
+.non-places {
+    top: 502px;
+    left: 33%;
+}
+
+.non-places-img {
+    width: 779px;
+}
+
+.non-places-label {
+    display: block;
+}
+
+.refugees {
+    top: 0px;
+    right: 8%;
+}
+
+.refugees-img {
+    width: 620px;
+}
+
+.refugees-label {
+    display: inline-block;
+    transform: rotate(270deg);
+    padding-top: 100px;
+    text-decoration: line-through;
+}
+
+.re-collection {
+    top: 1338px;
+    left: 65%;
+}
+
+.re-collection-img {
+    width: 460px;
+}
+
+.re-collection-label {
+    display: inline-block;
+    transform: rotate(270deg);
+    padding-top: 150px;
+}
+
+.saltyBread {
+    top: 1124px;
+    left: 49%;
+}
+
+.saltyBread-img {
+    width: 620px;
+}
+
+.saltyBread-label {
+    display: inline-block;
+    transform: rotate(90deg);
+    vertical-align: top;
+    padding-top: 125px;
+}
+
+.display {
+    left: 1%;
+    top: 815px;
+}
+
+.display-img {
+    width: 620px;
+}
+
+.display-label {
+    display: block;
+}
+
+.theProtagonists {
+    right: 1%;
+    top: 437px;
+}
+
+.theProtagonists-img {
+    width: 460px;
+}
+
+.theProtagonists-label {
+    display: block;
+}
+
+.thingsInCommon {
+    left: 33%;
+    top: 1595px;
+}
+
+.thingsInCommon-img {
+    width: 460px;
+}
+
+.thingsInCommon-label {
+    display: inline-block;
+    transform: rotate(270deg);
+    padding-top: 180px;
+}
+
+.thanksgiving {
+    left: 17%;
+    top: 1165px;
+}
+
+.thanksgiving-img {
+    width: 460px;
+}
+
+.thanksgiving-label {
+    display: inline-block;
+    transform: rotate(270deg);
+    vertical-align: top;
+    padding-top: 140px;
+}

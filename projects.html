@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Natalia Wiernik</title>
+        <link rel="stylesheet" href='styles/projects.css'>
+        <link rel="stylesheet" href="scripts/splide/dist/css/splide.min.css">
+    </head>
+    <body>
+        <nav class="natSite-menu">
+            <a class="natSite-menu-button" href='index.html'>
+                Natalia Wiernik
+            </a>
+            <a class="natSite-menu-button">
+                Stream
+            </a>
+        </nav>
+
+        <main>
+            <div class="splide">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        Prev
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        Next
+                    </button>
+                </div>
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src='photos/wota/DSC_5077.jpg' style="width: 461px"/></li>
+                        <li class="splide__slide"><img src='photos/non-places/011.jpg' style="width: 620px"/></li>
+                        <li class="splide__slide"><img src='photos/refugees/002.jpg' style="width: 785px"/></li>
+                        <li class="splide__slide"><img src='photos/re-collection/008.jpg' style="width: 461px"/></li>
+                        <li class="splide__slide"><img src='photos/salty bread/5.png' style="width: 779px"/></li>
+                        <li class="splide__slide"><img src='photos/display/003.jpg' style="width: 620px"/></li>
+                        <li class="splide__slide"><img src='photos/display/004.jpg' style="width: 620px"/></li>
+                        <li class="splide__slide"><img src='photos/the protagonists/_IMG0541.jpg' style="width: 779px"/></li>
+                        <li class="splide__slide"><img src='photos/things in common/015.jpg' style="width: 461px"/></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <nav class='footer-menu'>
+            <div href='projects.html' class="footer-menu-button">
+                ??
+            </div>
+            <div href='' class="footer-menu-button">
+                ??
+            </div>
+        </nav>
+
+        <script src="scripts/splide/dist/js/splide.min.js"></script>
+        <script>
+           new Splide( '.splide', {
+                type   : 'loop',
+                perPage: 3,
+                perMove: 1,
+                gap: 300,
+                autoWidth: true,
+                focus: 'center',
+                drag: true
+            } ).mount();
+        </script>
+
+    </body>
+</html>
