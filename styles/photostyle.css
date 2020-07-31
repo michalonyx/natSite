@@ -8,9 +8,27 @@
 .thingsInCommon,
 .thanksgiving {
     position: absolute;
+    font-weight: 400;
+    font-size: 12px;
     opacity: 0.2;
     filter: blur(30px);
-    transition: 0.2s;
+    transition: position 0.2s ease,
+                opacity 0.2s ease,
+                filter 0.2s ease;
+    will-change: position, opacity, filter;
+}
+
+.wota-label,
+.non-places-label,
+.refugees-label,
+.re-collectionl-label,
+.saltyBread-label,
+.display-label,
+.theProtagonists-label,
+.thingsInCommon-label,
+.thanksgiving-label {
+    display: none;
+    opacity: 0;
 }
 
 .wota:hover,
@@ -38,6 +56,7 @@
 
 .wota-label {
     display: inline-block;
+    vertical-align: top;
     transform: rotate(90deg);
     padding-top: 70px;
 }

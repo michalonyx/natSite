@@ -33,8 +33,7 @@ body {
     box-sizing: border-box;
 }
 
-.natSite-menu-button,
-.footer-menu-button {
+.natSite-menu-button {
     color: var(--main-fonts-color);
     text-decoration: none;
     font-family: oldStandard;
@@ -45,8 +44,7 @@ body {
     margin-bottom: 14px;
 }
 
-.natSite-menu,
-.footer-menu {
+.natSite-menu {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -54,6 +52,23 @@ body {
     z-index: 99;
 }
 
-.footer-menu {
-    bottom: 20px;
+.natSite-carousel{
+    padding-top: 50px;
+}
+
+.splide > .splide__track > .splide__list {
+    align-items: center;
+}
+
+div.splide__arrow--prev,
+div.splide__arrow--next {
+    height: 800px;
+    width: 300px;
+    border-radius: unset;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+ul.splide__pagination {
+    display: none;
 }

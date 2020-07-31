@@ -1,6 +1,6 @@
 const bio = [
         {
-            text: '(b.1989) is a multimedia artist living and working in Krakow, Poland. She was a student at the Faculty of Graphic Arts at the Jan Matejko Academy of Fine Arts in Krakow (ASP) between 2008 – 2013. Wiernik pursued her doctoral studies at the Department of Animation, Photography and Digital Media at ASP and in 2017 she was awarded a PhD in Fine Arts. She also works at ASP as a lecturer.',
+            text: '(b.1989) is a multimedia artist living and working in Krakow, Poland. She was a student at the Faculty of Graphic Arts at the Jan Matejko Academy of Fine Arts in Krakow (ASP) between 2008 - 2013. Wiernik pursued her doctoral studies at the Department of Animation, Photography and Digital Media at ASP and in 2017 she was awarded a PhD in Fine Arts. She also works at ASP as a lecturer.',
             specialText: '',
             textContinuation: ''
         }, {
@@ -27,12 +27,11 @@ function createBioNodes(data) {
     container.appendChild(p)
 
     if (data.specialText) {
-        p.setAttribute('class', 'info-bio-specialText')
-        p.innerText = data.specialText
-        container.appendChild(p)
+        s = document.createElement('s')
+        s.innerText = data.specialText
+        p.appendChild(s)
 
-        p.setAttribute('class', 'info-bio')
-        p.innerText = data.textContinuation
+        p.innerText += data.textContinuation
         container.appendChild(p)
     }
 }

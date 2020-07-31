@@ -180,15 +180,17 @@ function createExhNodes(data, container) {
     p.innerText = data.year
     container.appendChild(p)
 
-    if (data.additionalInfo) {
-        let text = document.createTextNode(data.additionalnfo + ' ')
-        container.appendChild(text)
-    }
-
     if (data.title) {
-        span.setAttribute('class', 'about-info--italic')
-        span.innerText = data.title + ', '
-        container.appendChild(span)
+
+        if (data.additionalInfo) {
+            span.setAttribute('class', 'about-info--italic')
+            span.innerText = data.title + ', '
+            container.append(data.additionalInfo + ' ', span, ' ')
+        } else {
+            span.setAttribute('class', 'about-info--italic')
+            span.innerText = data.title + ', '
+            container.appendChild(span)
+        }
     }
 
     container.appendChild(document.createTextNode(data.description))

@@ -30,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--main-bg-color);
+    font-family: oldStandard;
     box-sizing: border-box;
     opacity: 1;
     transition: var(--transition);
@@ -41,7 +42,7 @@ body {
     justify-content: space-between;
     width: 100%;
     position: fixed;
-    z-index: 99;
+    z-index: 102;
 }
 
 .footer-menu {
@@ -68,6 +69,10 @@ body {
 
 .menu-button--close {
     display: none;
+    cursor: pointer;
+}
+
+.menu-button--about {
     cursor: pointer;
 }
 
@@ -104,7 +109,7 @@ body {
     width: 1px;
     background-color: var(--main-fonts-color);
     height: inherit;
-    z-index: 100;
+    z-index: 105;
     transform: scaleY(1.008);
 }
 
@@ -168,6 +173,7 @@ body {
 
 .about-info--header {
     padding-left: 50px;
+    margin: 0;
 }
 
 #publications:last-child {
@@ -176,20 +182,6 @@ body {
 
 .natsite-body {
     width: 100%;
-}
-
-.ministerstwo {
-    padding-top: 150px;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    font-family: oldStandard;
-}
-
-.ministerstwo-photo {
-    display: block;
-    margin: 0 auto;
 }
 
 .natSite-horLine {
@@ -214,5 +206,6 @@ body {
 
 .natSite-ministerstwo-label {
     display: block;
+    font-size: 12px;
     margin-top: 20px;
 }

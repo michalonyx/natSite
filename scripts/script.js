@@ -35,8 +35,8 @@ function toggle(selector, value, parameter, nextValue) {
         document.querySelector(selector).style[parameter] = value;
         setTimeout(() => document.querySelector(selector).style.display = 'none', 1000)
     } else if (parameter === 'opacity' && value === '1') {
+        document.querySelector(selector).style.display = nextValue
         setTimeout(() => {
-            document.querySelector(selector).style.display = nextValue
             document.querySelector(selector).style[parameter] = value;
         }, 1000)
     } else {
