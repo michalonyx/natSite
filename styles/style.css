@@ -42,7 +42,7 @@ body {
     justify-content: space-between;
     width: 100%;
     position: fixed;
-    z-index: 102;
+    z-index: 101;
 }
 
 .footer-menu {
@@ -186,16 +186,16 @@ body {
 
 .natSite-horLine {
     position: relative;
-    bottom: 55px;
+    bottom: 35px;
     width: 99%;
 }
 
 .natSite-ministerstwo {
     position: absolute;
-    top: 1870px;
+    top: 1890px;
     left: 51%;
     width: 454px;
-    z-index: 100;
+    z-index: 102;
 }
 
 .natSite-ministerstwo-img {

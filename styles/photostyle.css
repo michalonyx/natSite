@@ -27,8 +27,7 @@
 .theProtagonists-label,
 .thingsInCommon-label,
 .thanksgiving-label {
-    display: none;
-    opacity: 0;
+    display: none!important;
 }
 
 .wota:hover,
@@ -150,6 +149,11 @@
 .thingsInCommon {
     left: 33%;
     top: 1595px;
+    z-index: 103;
+}
+
+.thingsInCommon:hover {
+    z-index: 103;
 }
 
 .thingsInCommon-img {
